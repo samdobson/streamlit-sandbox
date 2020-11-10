@@ -4,6 +4,8 @@ from streamlit_metrics import metric, metric_row
 from streamlit_ace import st_ace
 
 import pandas as pd
+import numpy as np
+import altair as alt
 
 st.set_page_config(page_title='Streamlit Sandbox', page_icon=':memo:', layout='wide', initial_sidebar_state='collapsed')
 st.sidebar.title(":memo: Editor settings")
@@ -50,3 +52,16 @@ with editor:
 
 with display:
     exec(code)
+
+with st.sidebar:
+    libraries_available = st.beta_expander('Available Libraries')
+    with libraries_available:
+        st.write("""
+        * Pandas (pd)
+        * Numpy (np)
+        * Altair (alt)
+        * Bokeh
+        * Plotly
+
+        [Need something else?](https://github.com/samdobson/streamlit-sandbox/issues/new)
+        """)
