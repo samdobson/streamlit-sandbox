@@ -62,6 +62,7 @@ with st.sidebar:
         * Altair (alt)
         * Bokeh
         * Plotly
+        * Cufflinks (cf)
 
         [Need something else?](https://github.com/samdobson/streamlit-sandbox/issues/new)
         """)
