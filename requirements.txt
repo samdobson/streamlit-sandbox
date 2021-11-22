@@ -1,5 +1,4 @@
 bokeh==2.2.3
-streamlit==0.70.0
 streamlit-ace==0.0.4
 streamlit-metrics==0.1.0
 plotly==4.12.0
