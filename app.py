@@ -22,7 +22,7 @@ THEMES = [
 
 KEYBINDINGS = ["emacs", "sublime", "vim", "vscode"]
 
-display, editor = st.beta_columns((2, 1))
+display, editor = st.columns((2, 1))
 
 INITIAL_CODE = """st.header("Streamlit Sandbox")
 st.write("Play with Streamlit live in the browser!")
@@ -55,7 +55,7 @@ with display:
     exec(code)
 
 with st.sidebar:
-    libraries_available = st.beta_expander('Available Libraries')
+    libraries_available = st.expander('Available Libraries')
     with libraries_available:
         st.write("""
         * Pandas (pd)
