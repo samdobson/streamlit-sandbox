@@ -71,7 +71,6 @@ st.write(pd.DataFrame(data=table_data))
 """
 
 with editor:
-    st.write("### Code editor")
     code = st_ace(
         value=INITIAL_CODE,
         language="python",
